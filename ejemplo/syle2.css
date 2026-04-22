@@ -1,0 +1,54 @@
+body{
+    height: 100vh;
+}
+
+
+form {
+    width: 450px;
+    height: auto;
+    margin: o auto;
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bg {
+    background-color: black;
+}
+form > button {
+    cursor: pointer;
+    padding: 10px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: steelblue;
+}
+
+.error {
+    border: solid #dd1010 1px;
+    padding: 6px;
+}
+
+div ul{
+    width: 450px;
+    background-color: #dd1010;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+
+div ul li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+div ul li > a{
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
