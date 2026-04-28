@@ -1,40 +1,199 @@
 {
   "users": [
-    { "id": 1, "name": "Ana Torres", "email": "ana.torres@mail.com" },
-    { "id": 2, "name": "Carlos Gómez", "email": "carlos.gomez@mail.com" },
-    { "id": 3, "name": "María López", "email": "maria.lopez@mail.com" },
-    { "id": 4, "name": "Juan Pérez", "email": "juan.perez@mail.com" },
-    { "id": 5, "name": "Laura Martínez", "email": "laura.martinez@mail.com" },
-    { "id": 6, "name": "Pedro Sánchez", "email": "pedro.sanchez@mail.com" },
-    { "id": 7, "name": "Sofía Ramírez", "email": "sofia.ramirez@mail.com" },
-    { "id": 8, "name": "Andrés Morales", "email": "andres.morales@mail.com" },
-    { "id": 9, "name": "Valentina Cruz", "email": "valentina.cruz@mail.com" },
-    { "id": 10, "name": "Diego Herrera", "email": "diego.herrera@mail.com" }
+    {
+      "id": "1",
+      "name": "Ana Torres",
+      "active": true,
+      "document": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Carlos Gómez",
+      "active": true,
+      "document": "987456"
+    },
+    {
+      "id": "3",
+      "name": "María López",
+      "active": false,
+      "document": "133441"
+    },
+    {
+      "id": "4",
+      "name": "Juan Pérez",
+      "active": true,
+      "document": "468788"
+    },
+    {
+      "id": "5",
+      "name": "Laura Martínez",
+      "active": true,
+      "document": "555123"
+    },
+    {
+      "id": "6",
+      "name": "Pedro Sánchez",
+      "active": false,
+      "document": "666789"
+    },
+    {
+      "id": "7",
+      "name": "Sofía Ramírez",
+      "active": true,
+      "document": "777456"
+    },
+    {
+      "id": "8",
+      "name": "Andrés Morales",
+      "active": true,
+      "document": "888912"
+    },
+    {
+      "id": "9",
+      "name": "Valentina Cruz",
+      "active": true,
+      "document": "999321"
+    },
+    {
+      "id": "10",
+      "name": "Diego Herrera",
+      "active": false,
+      "document": "101010"
+    }
   ],
-
-  "posts": [
-    { "id": 1, "userId": 1, "title": "Introducción a las API", "body": "Conceptos básicos sobre APIs y su importancia." },
-    { "id": 2, "userId": 2, "title": "HTTP y la web", "body": "Cómo funciona el protocolo HTTP." },
-    { "id": 3, "userId": 3, "title": "Arquitectura cliente-servidor", "body": "Modelo de comunicación en aplicaciones web." },
-    { "id": 4, "userId": 4, "title": "Método GET", "body": "Uso del método GET para consultar información." },
-    { "id": 5, "userId": 5, "title": "Método POST", "body": "Creación de recursos mediante POST." },
-    { "id": 6, "userId": 6, "title": "Método PUT", "body": "Actualización completa de recursos." },
-    { "id": 7, "userId": 7, "title": "Método PATCH", "body": "Actualización parcial de información." },
-    { "id": 8, "userId": 8, "title": "Método DELETE", "body": "Eliminación de recursos en una API." },
-    { "id": 9, "userId": 9, "title": "Códigos de estado", "body": "Interpretación de respuestas HTTP." },
-    { "id": 10, "userId": 10, "title": "Buenas prácticas API", "body": "Recomendaciones para diseñar APIs REST." }
+  "tasks": [
+    {
+      "id": "1",
+      "userId": 1,
+      "title": "Fundamentos Web",
+      "description": "Estudiar conceptos básicos de HTML5 y semántica."
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "title": "Protocolo HTTP",
+      "description": "Práctica de métodos GET, POST, PUT y DELETE en consola."
+    },
+    {
+      "id": "3",
+      "userId": 2,
+      "title": "Arquitectura",
+      "description": "Diagramar el modelo Cliente-Servidor para el proyecto final."
+    },
+    {
+      "id": "4",
+      "userId": 4,
+      "title": "Asincronía",
+      "description": "Refactorizar código de callbacks a Promesas y Async/Await."
+    },
+    {
+      "id": "5",
+      "userId": 5,
+      "title": "Diseño de APIs",
+      "description": "Aplicar buenas prácticas de nombrado de rutas en REST."
+    },
+    {
+      "id": "6",
+      "userId": 7,
+      "title": "Métodos de Array",
+      "description": "Implementar búsquedas avanzadas usando Map, Filter y Find."
+    },
+    {
+      "id": "7",
+      "userId": 9,
+      "title": "QA & Testing",
+      "description": "Realizar pruebas unitarias básicas a los servicios de usuario."
+    },
+    {
+      "id": "8",
+      "userId": 9,
+      "title": "Ciberseguridad",
+      "description": "Validar entradas de formularios para prevenir inyecciones."
+    },
+    {
+      "id": "9",
+      "userId": 10,
+      "title": "Documentación",
+      "description": "Redactar el README.md con las instrucciones de instalación."
+    },
+    {
+      "id": "10",
+      "userId": 2,
+      "title": "Integraciones",
+      "description": "Conectar el frontend con el servicio externo de JSON Server."
+    },
+    {
+      "title": "pasado mañana",
+      "descripcion": "aguacates",
+      "userID": 2,
+      "id": "ts-m9pgoTeU"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "8JCEywm"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "l9twEJy"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "U_3tn6c"
+    },
+    {
+      "title": "fff",
+      "descripcion": "fff",
+      "userID": 1,
+      "id": "TX2B2AZ"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "fd5hxq-"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "p7VbwMf"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "u_H9ilC"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "SIDRPYq"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "LBrtx_v"
+    },
+    {
+      "title": "HOLA",
+      "descripcion": "buenos dias",
+      "userID": 1,
+      "id": "B1dYtZf"
+    },
+    {
+      "title": "HOLA",
+      "description": "buenos dias",
+      "userID": 1,
+      "id": "dJw5op1"
+    }
   ],
-
-  "comments": [
-    { "id": 1, "postId": 1, "name": "Comentario 1", "body": "Muy clara la explicación." },
-    { "id": 2, "postId": 1, "name": "Comentario 2", "body": "Buen contenido introductorio." },
-    { "id": 3, "postId": 2, "name": "Comentario 3", "body": "Ayuda a entender HTTP." },
-    { "id": 4, "postId": 3, "name": "Comentario 4", "body": "Buen ejemplo de arquitectura." },
-    { "id": 5, "postId": 4, "name": "Comentario 5", "body": "GET es muy usado en la práctica." },
-    { "id": 6, "postId": 5, "name": "Comentario 6", "body": "POST permite enviar datos." },
-    { "id": 7, "postId": 6, "name": "Comentario 7", "body": "PUT reemplaza la información." },
-    { "id": 8, "postId": 7, "name": "Comentario 8", "body": "PATCH es más eficiente." },
-    { "id": 9, "postId": 8, "name": "Comentario 9", "body": "DELETE debe usarse con cuidado." },
-    { "id": 10, "postId": 9, "name": "Comentario 10", "body": "Los códigos HTTP son importantes." }
-  ]
+  "$schema": "./node_modules/json-server/schema.json"
 }

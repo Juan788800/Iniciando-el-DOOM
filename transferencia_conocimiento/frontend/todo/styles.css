@@ -1,5 +1,5 @@
 /* ============================================
-   SISTEMA DE DISEÑO - VARIABLES CSS
+    SISTEMA DE DISEÑO - VARIABLES CSS
    ============================================ */
 
 :root {
@@ -91,7 +91,7 @@
 }
 
 /* ============================================
-   RESET Y ESTILOS BASE
+    RESET Y ESTILOS BASE
    ============================================ */
 
 *, *::before, *::after {
@@ -118,7 +118,7 @@ body {
 }
 
 /* ============================================
-   LAYOUT PRINCIPAL
+    LAYOUT PRINCIPAL
    ============================================ */
 
 .container {
@@ -127,7 +127,7 @@ body {
 }
 
 /* ============================================
-   HEADER
+    HEADER
    ============================================ */
 
 .header {
@@ -154,7 +154,7 @@ body {
 }
 
 /* ============================================
-   CARD COMPONENT
+    CARD COMPONENT
    ============================================ */
 
 .card {
@@ -173,7 +173,7 @@ body {
 }
 
 /* ============================================
-   FORMULARIO
+    FORMULARIO
    ============================================ */
 
 .form-section {
@@ -214,11 +214,6 @@ body {
     color: var(--color-gray-400);
 }
 
-.form__textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
 .form__input.error {
     border-color: var(--color-error);
 }
@@ -237,7 +232,7 @@ body {
 }
 
 /* ============================================
-   BOTONES
+    BOTONES
    ============================================ */
 
 .btn {
@@ -285,14 +280,81 @@ body {
 }
 
 /* ============================================
-   SECCIÓN DE MENSAJES
+    SECCIÓN DEL FORMULARIO DE TAREAS NUEVAS
    ============================================ */
 
-.messages-section {
+.formulario-tarea {
+    display: flex;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-gray-100);
+}
+
+.formulario-oculto {
+    display: none;
+}
+
+.inputTarea {
+    width: 734px;
+    padding: var(--spacing-md);
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-gray-200);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.formularioError {
+    border-color: var(--color-error);
+    outline: var(--color-error);
+}
+
+.inputTarea::placeholder {
+    color: var(--color-gray-400);
+}
+
+.inputTarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-lighter);
+}
+
+.botonEnviar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    font-family: var(--font-family-base);
+    line-height: 1;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ============================================
+    SECCIÓN DE TAREAS
+   ============================================ */
+
+.tareas-section {
     margin-bottom: var(--spacing-2xl);
 }
 
-.messages-header {
+.tareas-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -300,13 +362,13 @@ body {
     padding: var(--spacing-md);
 }
 
-.messages-header__title {
+.tareas-header__title {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
     color: var(--color-text-primary);
 }
 
-.messages-header__count {
+.tareas-header__count {
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
     color: var(--color-text-secondary);
@@ -315,14 +377,14 @@ body {
     border-radius: var(--radius-full);
 }
 
-.messages-container {
+.tareas-container {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
 }
 
 /* Estado vacío */
-.messages-empty {
+.tareas-empty {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,25 +396,32 @@ body {
     text-align: center;
 }
 
-.messages-empty__icon {
+.tareas-empty__icon {
     color: var(--color-gray-300);
     margin-bottom: var(--spacing-lg);
 }
 
-.messages-empty__text {
+.tareas-empty__text {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-medium);
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-xs);
 }
 
-.messages-empty__subtext {
+.tareas-empty__subtext {
     font-size: var(--font-size-sm);
     color: var(--color-text-tertiary);
 }
 
-/* Tarjeta de mensaje */
-.message-card {
+.hidden {
+    display: none;
+}
+
+.empty-disble {
+    display: none;
+}
+
+.tarea-card {
     background: var(--color-surface);
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
@@ -362,25 +431,25 @@ body {
     transition: all var(--transition-base);
 }
 
-.message-card:hover {
+.tarea-card:hover {
     box-shadow: var(--shadow-xl);
     transform: translateY(-2px);
 }
 
-.message-card__header {
+.tarea-card__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: var(--spacing-md);
 }
 
-.message-card__user {
+.tarea-card__user {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
 }
 
-.message-card__avatar {
+.tarea-card__avatar {
     width: 40px;
     height: 40px;
     border-radius: var(--radius-full);
@@ -393,27 +462,40 @@ body {
     font-size: var(--font-size-sm);
 }
 
-.message-card__username {
+.tarea-card__username {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     color: var(--color-text-primary);
 }
 
-.message-card__timestamp {
+.tarea-card__timestamp {
     font-size: var(--font-size-xs);
     color: var(--color-text-tertiary);
     font-weight: var(--font-weight-medium);
 }
 
-.message-card__content {
+.tarea-card__content {
     font-size: var(--font-size-base);
     color: var(--color-text-secondary);
     line-height: 1.6;
     word-wrap: break-word;
 }
 
+.tarea-card__title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.tarea-card__description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
 /* ============================================
-   FOOTER
+    FOOTER
    ============================================ */
 
 .footer {
@@ -430,7 +512,7 @@ body {
 }
 
 /* ============================================
-   ANIMACIONES
+    ANIMACIONES
    ============================================ */
 
 @keyframes slideIn {
@@ -445,7 +527,7 @@ body {
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+    RESPONSIVE DESIGN
    ============================================ */
 
 @media (max-width: 768px) {
@@ -470,7 +552,7 @@ body {
         padding: var(--spacing-lg);
     }
     
-    .messages-header {
+    .tareas-header {
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-sm);
@@ -482,7 +564,7 @@ body {
         width: 100%;
     }
     
-    .message-card__header {
+    .tarea-card__header {
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-sm);
@@ -490,11 +572,11 @@ body {
 }
 
 /* ============================================
-   UTILIDADES
+    UTILIDADES
    ============================================ */
 
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 .fade-out {
